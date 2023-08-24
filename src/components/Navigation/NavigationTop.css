@@ -1,0 +1,31 @@
+nav {
+    height: 8vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    padding: 0 20vw;
+
+    > .logo {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: left;
+
+        > p { padding: 0 0.5rem; }
+        > img {
+            height: 35px;
+            width: 35px;
+        }
+    }
+    > .links {
+        display: grid;
+        grid-auto-flow: column;
+        align-content: center;
+        justify-content: right;
+
+        > a {
+            padding: 0 0.2vw;
+        }
+    }
+}

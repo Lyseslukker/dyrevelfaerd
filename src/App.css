@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+h1 { font-size: 3vw; }
+
+p, a {
+    font-weight: 300;
+}
+

@@ -1,0 +1,32 @@
+/* TOP BANNER */
+.home__topBanner {
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    /* align-content: center; */
+    padding: 0 20vw;
+
+    > .topBanner__wrapper {
+        padding-top: 2rem;
+
+        > h1, p {
+            color: white;
+        }
+    }
+}
+
+.home__about {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+
+
+
+
+.dyr__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
