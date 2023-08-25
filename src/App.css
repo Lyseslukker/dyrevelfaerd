@@ -11,12 +11,19 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1, h2, h3 {
-    font-weight: 500;
+    font-weight: 400;
 }
 h1 { font-size: 3vw; }
 
+
 p, a {
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
