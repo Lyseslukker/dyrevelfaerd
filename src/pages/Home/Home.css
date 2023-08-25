@@ -1,194 +1,426 @@
 
-
-/* BANNERS */
-.home__banner {
-    height: var(--banner-height);
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    /* align-content: center; */
-    padding: 0 20vw;
-
-    > .banner__wrapper {
-        padding-top: 2rem;
-
-        > h1, p {
-            color: white;
-        }
-        > p {
-            font-size: 1rem;
-        }
-    }
-}
-
-/* ABOUT */
-.home__about {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 2vw;
-    padding: 0 20vw;
-    margin: 1rem 0;
-
-    > .about__card {
-        > h2 {
-            color: var(--blue-font);
-        }
-    }
-}
-
-/* FRIVILLIG */
-.home__frivillig {
-    background-color: var(--blue-background);
-    padding: 1vw 20vw;
-    > h2 { 
-        color: var(--blue-font);
-        margin-bottom: 1rem;
-    }
-}
-/* FRIVILLIG CARDS */
-.frivillig__wrapper {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 1rem;
-
-    > .frivillig__card {
+/* Mobile(S,M,L) */
+@media screen and (min-width: 300px) {
+    /* BANNERS */
+    .home__banner {
+        height: var(--mobile-banner-height);
+        background-position: center;
+        background-size: cover;
         display: grid;
-        grid-template-rows: 0.5fr 8fr 0.5fr;
-    
-        > .cardHeader {
-            background-color: var(--gray);
-            padding: 0.5rem 1rem;
-            color: var(--gray-dark)
-        }
-        > .cardBody {
-            background-color: white;
-            padding: 1rem;
-            color: var(--gray-dark);
-            > img {
-                margin-bottom: 0.5rem;
+        /* align-content: center; */
+        padding: 0 2vw;
+
+        > .banner__wrapper {
+            padding-top: 5vw;
+
+            > h1, p {
+                color: white;
             }
-        }
-        > .cardFooter {
-            background-color: var(--gray);
-            padding: 0.5rem 1rem;
+            > h1 {
+                font-size: 8vw;
+            }
             > p {
-                color: var(--gray-dark);
-                font-style: italic;
+                font-size: 4vw;
             }
         }
     }
 }
 
-/* NYHEDS BREV */
-.home__nyhedsbrev {
-    background-color: var(--blue-background);
-    height: 20vh;
-    display: grid;
-    /* align-content: center; */
 
-    > .nyhedsbrev__wrapper {
+
+
+/* TABLETS */
+@media screen and (min-width: 480px) {
+    /* BANNERS */
+    .home__banner {
+        height: var(--tablet-banner-height);
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        /* align-content: center; */
         padding: 0 20vw;
+
+        > .banner__wrapper {
+            padding-top: 2rem;
+
+            > h1, p {
+                color: white;
+            }
+            > p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* ABOUT */
+    .home__about {
         display: grid;
         grid-auto-flow: column;
-
-        > .wrapper__top {
-            margin-top: 0.5rem;
-            display: grid;
-            grid-template-rows: 1fr 2fr;
-            > h2 { color: var(--blue-font) }
-        }
-        > form {
-            align-self: center;
-            display: grid;
-            row-gap: 1rem;
-
-            > .form__inputs {
-                display: grid;
-                grid-auto-flow: column;
-                column-gap: 1rem;
-                
-                > input {
-                    border-radius: 0.2rem;
-                    padding: 0.2rem 0.5rem;
-                    border: none;
-                }
-            }
-            > button {
-                width: 25%;
-                justify-self: end;
-                background-color: var(--blue-button);
-                border-radius: 0.2rem;
-                color: white;
-                border: none;
-                padding: 0.35rem 0;
-            }
-        }
-    }
-}
-
-/* LISTE AF DYR */
-.home__dyr {
-    padding: 0 20vw;
-
-    > h2 {
-        color: var(--blue-font);
-        font-size: 2.5vw;
-    }
-    > p {
-        font-size: 1vw;
-    }
-    > .dyr__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem 1rem;
+        column-gap: 2vw;
+        padding: 0 2vw;
         margin: 1rem 0;
 
-        > .dyrCard {
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 1fr 2fr;
-            border: solid 0.5px gray;
-            border-radius: 0.2rem;
-
-            >.dyrCard__img {
-                background-position: center;
-                background-size: cover;
+        > .about__card {
+            > h2 {
+                color: var(--blue-font);
             }
-            > .dyrCard__text {
-                display: grid;
-                grid-template-rows: 1fr 3fr 1fr 1fr;
-                row-gap: 0.5rem;
-                padding: 1rem;
+        }
+    }
 
-                > .text__dage {
-                    color: var(--gray-dark)
+    /* FRIVILLIG */
+    .home__frivillig {
+        background-color: var(--blue-background);
+        padding: 1vw 2vw;
+        > h2 { 
+            color: var(--blue-font);
+            margin-bottom: 1rem;
+        }
+    }
+    /* FRIVILLIG CARDS */
+    .frivillig__wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 1rem;
+
+        > .frivillig__card {
+            display: grid;
+            grid-template-rows: 0.5fr 6fr 0.5fr;
+        
+            > .cardHeader {
+                background-color: var(--gray);
+                padding: 0.5rem 1rem;
+                color: var(--gray-dark)
+            }
+            > .cardBody {
+                background-color: white;
+                padding: 1rem;
+                color: var(--gray-dark);
+                > img {
+                    margin-bottom: 0.5rem;
                 }
             }
+            > .cardFooter {
+                background-color: var(--gray);
+                padding: 0.5rem 1rem;
+                > p {
+                    color: var(--gray-dark);
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    /* NYHEDS BREV */
+    .home__nyhedsbrev {
+        background-color: var(--blue-background);
+        height: 20vh;
+        display: grid;
+        /* align-content: center; */
+
+        > .nyhedsbrev__wrapper {
+            padding: 0 2vw;
+            display: grid;
+            grid-auto-flow: column;
+
+            > .wrapper__top {
+                margin-top: 0.5rem;
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+                > h2 { color: var(--blue-font) }
+            }
+            > form {
+                align-self: center;
+                display: grid;
+                row-gap: 1rem;
+
+                > .form__inputs {
+                    display: grid;
+                    grid-auto-flow: column;
+                    column-gap: 1rem;
+                    
+                    > input {
+                        border-radius: 0.2rem;
+                        padding: 0.2rem 0.5rem;
+                        border: none;
+                    }
+                }
+                > button {
+                    width: 25%;
+                    justify-self: end;
+                    background-color: var(--blue-button);
+                    border-radius: 0.2rem;
+                    color: white;
+                    border: none;
+                    padding: 0.35rem 0;
+                }
+            }
+        }
+    }
+
+    /* LISTE AF DYR */
+    .home__dyr {
+        padding: 0 2vw;
+
+        > h2 {
+            color: var(--blue-font);
+            font-size: 2.5vw;
+        }
+        > p {
+            font-size: 1vw;
+        }
+        > .dyr__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem 1rem;
+            margin: 1rem 0;
+
+            > .dyrCard {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 1fr 2fr;
+                border: solid 0.5px gray;
+                border-radius: 0.2rem;
+
+                >.dyrCard__img {
+                    background-position: center;
+                    background-size: cover;
+                }
+                > .dyrCard__text {
+                    display: grid;
+                    grid-template-rows: 1fr 3fr 1fr 1fr;
+                    row-gap: 0.5rem;
+                    padding: 1rem;
+
+                    > .text__dage {
+                        color: var(--gray-dark)
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 20vh;
+        padding: 1rem 2vw;
+        background-color: var(--blue-background);
+        display: grid;
+
+        > .info {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+            > .info__left { display: grid; }
+            > .info__right { 
+                display: grid;
+                > a {
+                    color: var(--blue-bot-link)
+                }
+            }
+        }
+        > .copyright {
+            display: grid;
+            justify-content: center;
         }
     }
 }
 
 
-footer {
-    height: 20vh;
-    padding: 1rem 20vw;
-    background-color: var(--blue-background);
-    display: grid;
 
-    > .info {
+
+/* BIGGER DESKTOP */
+@media screen and (min-width: 1024px) {
+    /* BANNERS */
+    .home__banner {
+        height: var(--banner-height);
+        background-position: center;
+        background-size: cover;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        /* align-content: center; */
+        padding: 0 20vw;
 
-        > .info__left { display: grid; }
-        > .info__right { 
-            display: grid;
-            > a {
-                color: var(--blue-bot-link)
+        > .banner__wrapper {
+            padding-top: 2rem;
+
+            > h1 {
+                color: white;
+                font-size: 5vw;
+            }
+            > p {
+                color: white;
+                font-size: 1rem;
             }
         }
     }
-    > .copyright {
+
+    /* ABOUT */
+    .home__about {
         display: grid;
-        justify-content: center;
+        grid-auto-flow: column;
+        column-gap: 2vw;
+        padding: 0 20vw;
+        margin: 1rem 0;
+
+        > .about__card {
+            > h2 {
+                color: var(--blue-font);
+            }
+        }
+    }
+
+    /* FRIVILLIG */
+    .home__frivillig {
+        background-color: var(--blue-background);
+        padding: 1vw 20vw;
+        > h2 { 
+            color: var(--blue-font);
+            margin-bottom: 1rem;
+        }
+    }
+    /* FRIVILLIG CARDS */
+    .frivillig__wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 1rem;
+
+        > .frivillig__card {
+            display: grid;
+            grid-template-rows: 0.5fr 8fr 0.5fr;
+        
+            > .cardHeader {
+                background-color: var(--gray);
+                padding: 0.5rem 1rem;
+                color: var(--gray-dark)
+            }
+            > .cardBody {
+                background-color: white;
+                padding: 1rem;
+                color: var(--gray-dark);
+                > img {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            > .cardFooter {
+                background-color: var(--gray);
+                padding: 0.5rem 1rem;
+                > p {
+                    color: var(--gray-dark);
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    /* NYHEDS BREV */
+    .home__nyhedsbrev {
+        background-color: var(--blue-background);
+        height: 20vh;
+        display: grid;
+        /* align-content: center; */
+
+        > .nyhedsbrev__wrapper {
+            padding: 0 20vw;
+            display: grid;
+            grid-auto-flow: column;
+
+            > .wrapper__top {
+                margin-top: 0.5rem;
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+                > h2 { color: var(--blue-font) }
+            }
+            > form {
+                align-self: center;
+                display: grid;
+                row-gap: 1rem;
+
+                > .form__inputs {
+                    display: grid;
+                    grid-auto-flow: column;
+                    column-gap: 1rem;
+                    
+                    > input {
+                        border-radius: 0.2rem;
+                        padding: 0.2rem 0.5rem;
+                        border: none;
+                    }
+                }
+                > button {
+                    width: 25%;
+                    justify-self: end;
+                    background-color: var(--blue-button);
+                    border-radius: 0.2rem;
+                    color: white;
+                    border: none;
+                    padding: 0.35rem 0;
+                }
+            }
+        }
+    }
+
+    /* LISTE AF DYR */
+    .home__dyr {
+        padding: 0 20vw;
+
+        > h2 {
+            color: var(--blue-font);
+            font-size: 2.5vw;
+        }
+        > p {
+            font-size: 1vw;
+        }
+        > .dyr__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem 1rem;
+            margin: 1rem 0;
+
+            > .dyrCard {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 1fr 2fr;
+                border: solid 0.5px gray;
+                border-radius: 0.2rem;
+
+                >.dyrCard__img {
+                    background-position: center;
+                    background-size: cover;
+                }
+                > .dyrCard__text {
+                    display: grid;
+                    grid-template-rows: 1fr 3fr 1fr 1fr;
+                    row-gap: 0.5rem;
+                    padding: 1rem;
+
+                    > .text__dage {
+                        color: var(--gray-dark)
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        height: 20vh;
+        padding: 1rem 20vw;
+        background-color: var(--blue-background);
+        display: grid;
+
+        > .info {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+            > .info__left { display: grid; }
+            > .info__right { 
+                display: grid;
+                > a {
+                    color: var(--blue-bot-link)
+                }
+            }
+        }
+        > .copyright {
+            display: grid;
+            justify-content: center;
+        }
     }
 }

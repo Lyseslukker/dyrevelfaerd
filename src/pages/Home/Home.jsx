@@ -86,7 +86,7 @@ export default function Home() {
             .catch(err => console.error(err));
     }
 
-
+    console.log(screen.width)
 
     if (error) {
         return <h1>Something wrong happend</h1>

@@ -6,4 +6,11 @@
     --gray: #F7F7F7;
     --gray-dark: #8D8D8D;
     --banner-height: 30vh;
+
+    /* TABLET */
+    --tablet-banner-height: 20vh;
+
+
+    /* MOBILE */
+    --mobile-banner-height: 15vh;
 }
