@@ -1,0 +1,12 @@
+.details {
+    padding: 5vw 20vw;
+
+    .details__link {
+        display: grid;
+        place-content: start;
+        padding: 1vw 1.5vw;
+        border: solid 2px var(--blue-background);
+        margin: 2.5vw 0;
+        font-weight: 500;
+    }
+}

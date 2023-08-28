@@ -1,12 +1,12 @@
 /* Mobile(S,M,L) */
 @media screen and (min-width: 300px) {
-    nav {
+    header {
         height: 8vh;
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 1fr;
         align-content: center;
-        padding: 0 2vw;
+        padding: 0 5vw;
     
         > .logo {
             display: grid;
@@ -20,7 +20,7 @@
                 width: 35px;
             }
         }
-        > .links {
+        /* > .links {
             display: grid;
             grid-auto-flow: column;
             align-content: center;
@@ -29,14 +29,14 @@
             > a {
                 padding: 0 0.2vw;
             }
-        }
+        } */
     }
 }
 
 
 /* TABLETS */
 @media screen and (min-width: 600px) {
-    nav {
+    header {
         height: 8vh;
         display: grid;
         grid-auto-flow: column;
@@ -63,7 +63,7 @@
             justify-content: right;
     
             > a {
-                padding: 0 0.2vw;
+                padding: 0 0.5vw;
             }
         }
     }
@@ -72,13 +72,13 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    nav {
+    header {
         height: 8vh;
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 1fr 1fr;
         align-content: center;
-        padding: 0 20vw;
+        padding: 0 10vw;
     
         > .logo {
             display: grid;
@@ -99,7 +99,43 @@
             justify-content: right;
     
             > a {
-                padding: 0 0.2vw;
+                padding: 0 0.5vw;
+            }
+        }
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+    header {
+        height: 8vh;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        padding: 0 10vw;
+    
+        > .logo {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: left;
+    
+            > p { padding: 0 0.5rem; }
+            > img {
+                height: 35px;
+                width: 35px;
+            }
+        }
+        > .links {
+            display: grid;
+            grid-auto-flow: column;
+            align-content: center;
+            justify-content: right;
+    
+            > a {
+                padding: 0 0.5vw;
             }
         }
     }
